@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: manoit-nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       run: manoit-nginx
