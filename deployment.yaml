@@ -17,3 +17,10 @@ spec:
         name: manoit-nginx
         ports:
         - containerPort: 80
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: manoit-nginx
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: pod-noit
+
